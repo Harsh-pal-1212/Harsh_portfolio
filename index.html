@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harsh Pal | Aspiring Software Developer</title>
+  <meta name="description" content="Portfolio of Harsh Pal, BCA student at FIEMITS College, Lucknow. C, C++, Web Development.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 3D background (Three.js draws here) -->
+  <canvas id="bg3d"></canvas>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav">
+    <a href="#home" class="logo"><span class="code-icon">&lt;/&gt;</span> Harsh <b>Pal</b></a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">&#9776;</button>
+
+    <nav id="navLinks">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <span class="status"><i></i> Available for Opportunities</span>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="hello">Hello, I'm</p>
+        <h1>Harsh <span class="red">Pal</span></h1>
+        <h2>Aspiring <span class="red" id="typing">Software Developer</span><span class="cursor">|</span></h2>
+        <p class="tagline">Building clean code, solving real problems<br>and turning ideas into innovative solutions.</p>
+
+        <div class="btn-row">
+          <a href="#projects" class="btn">&lt;/&gt; View Projects &rarr;</a>
+          <!-- resume.pdf ko isi folder me rakh dena -->
+          <a href="resume.pdf" class="btn ghost" download>&#8681; Download Resume</a>
+        </div>
+
+        <div class="socials">
+          <!-- "#" ki jagah apne asli links daalna -->
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+
+      <!-- 3D tilting photo with rotating rings -->
+      <div class="hero-photo-wrap">
+        <div class="hero-photo" id="heroPhoto">
+          <div class="ring r1"></div>
+          <div class="ring r2"></div>
+          <div class="ring r3"></div>
+          <img src="harsh.jpg" alt="Harsh Pal">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <h3 class="title reveal">About <span class="red">Me</span></h3>
+      <div class="grid two reveal">
+        <div class="card tilt">
+          <p>I am <b>Harsh Pal</b>, a passionate BCA student at FIEMITS College, Lucknow. I love coding, exploring new technologies and building useful projects that make a difference.</p>
+          <p>Abhi main HTML, CSS, JavaScript aur C/C++ par kaam kar raha hoon, aur ek achha software developer banne ki taraf badh raha hoon.</p>
+        </div>
+        <div class="card tilt info">
+          <h4>Contact Info</h4>
+          <p>&#9742; <a href="tel:+919336200158">+91 9336200158</a></p>
+          <p>&#9993; <a href="mailto:anshpal.pal@gmail.com">anshpal.pal@gmail.com</a></p>
+          <p>&#9906; BCA 1st Year, Lucknow &mdash; FIEMITS College</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section">
+      <h3 class="title reveal">My <span class="red">Skills</span></h3>
+      <div class="card tilt skills reveal">
+        <div class="skill" data-level="90"><span>C Programming</span><div class="bar"><div></div></div><em>90%</em></div>
+        <div class="skill" data-level="80"><span>C++</span><div class="bar"><div></div></div><em>80%</em></div>
+        <div class="skill" data-level="75"><span>Web Development</span><div class="bar"><div></div></div><em>75%</em></div>
+        <div class="skill" data-level="70"><span>Data Structures</span><div class="bar"><div></div></div><em>70%</em></div>
+        <div class="skill" data-level="85"><span>Git &amp; GitHub</span><div class="bar"><div></div></div><em>85%</em></div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+      <h3 class="title reveal">My <span class="red">Projects</span></h3>
+      <div class="grid three reveal">
+
+        <article class="card tilt project">
+          <div class="thumb">&lt;/&gt;</div>
+          <h4>Student Management System</h4>
+          <p>A C project to manage student records efficiently.</p>
+          <!-- GitHub par project upload karke link yaha daalna -->
+          <a href="https://github.com/" target="_blank" rel="noopener" class="btn small">View Project &rarr;</a>
+        </article>
+
+        <article class="card tilt project">
+          <div class="thumb">3D</div>
+          <h4>3D Portfolio Website</h4>
+          <p>This very site, built with HTML, CSS, JavaScript and Three.js.</p>
+          <a href="https://github.com/" target="_blank" rel="noopener" class="btn small">View Project &rarr;</a>
+        </article>
+
+        <article class="card tilt project soon">
+          <div class="thumb">+</div>
+          <h4>Next Project</h4>
+          <p>Coming soon. Learning and building every day.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section">
+      <h3 class="title reveal"><span class="red">Education</span></h3>
+      <div class="card tilt edu reveal">
+        <div class="edu-icon">&#127891;</div>
+        <div>
+          <h4>BCA (1st Year)</h4>
+          <p>Lucknow, FIEMITS College</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section">
+      <h3 class="title reveal">Let's <span class="red">Connect</span></h3>
+      <div class="card tilt connect reveal">
+        <p>Feel free to reach out!</p>
+        <a href="mailto:anshpal.pal@gmail.com" class="btn">Contact Me &rarr;</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span class="red">Dream &bull; Code &bull; Achieve</span>
+    <span>&copy; <span id="year">2026</span> Harsh Pal | Made with <span class="red">&hearts;</span> by Harsh</span>
+    <span class="red">Keep Coding...!</span>
+  </footer>
+
+  <!-- Three.js (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
